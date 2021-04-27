@@ -1,0 +1,41 @@
+#include "ResourceIds.hpp"
+
+'STR#' ID_ADDON_INFO "Add-on Name and Description" {
+/* [  1] */		"AddOn UI"
+/* [  2] */		"Trying to add UI..."
+}
+
+'STR#' ID_ADDON_MENU "Strings for the Menu" {
+/* [  2] */		"Example UI Add-Ons ^E3 ^ES ^EE ^EI ^ED ^ET ^10001"
+}
+
+'STR#' ID_ADDON_STRINGS "Add-On Strings" {
+/* [  1] */		"Generate UI"
+}
+
+'GDLG' ID_ADDON_DLG Modal          40   40  250  352  "Add-Ons UI" {
+/* [  1] */ Button				  150  319   90   23	LargePlain  "OK"
+/* [  2] */ Button				  50  319   90   23	    LargePlain  "Cancel"
+/* [  3] */ Icon                   15   10  220  160    10001
+/* [  4] */ LeftText               10  100  230   23    LargeBold vCenter "Template Settings"
+/* [  5] */ LeftText               10  130  130   23    LargePlain vCenter "Scale"
+/* [  6] */ PosIntEdit            150  130   90   23    LargePlain "1" "50"
+/* [  7] */ LeftText               10  160  130   23    LargePlain vCenter "Layer Combination"
+/* [  8] */ PosIntEdit            150  160   90   23    LargePlain "1" "50"
+/* [  9] */ Separator              10  307  230    2
+/* [ 10] */ PopupControl    	   50  200  200  22	 80 3
+
+}
+
+'DLGH' ID_ADDON_DLG DLG_Example {
+1  ""  Button_0
+2  ""  Button_1
+3  ""  Icon_0
+4  ""  LeftText_0
+5  ""  LeftText_1
+6  ""  PosIntEdit_0
+7  ""  LeftText_2
+8  ""  PosIntEdit_1
+9 ""  Separator_1
+10 "" PopupControl_0
+}
